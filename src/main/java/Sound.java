@@ -46,6 +46,6 @@ public class Sound
     int[] removedSilenceSample = new int[samples.length - zeroCount];
     for (int i = zeroCount; i < samples.length; i++)
       removedSilenceSample[i-zeroCount] = samples[i];
-    sample = removedSilenceSample;
+    samples = removedSilenceSample;
   }
 }
